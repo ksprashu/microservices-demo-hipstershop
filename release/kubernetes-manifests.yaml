@@ -47,7 +47,7 @@ spec:
               - all
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/vsz-demo/onlineboutique/emailservice:0.4.1
+        image: us-central1-docker.pkg.dev/next-sds-demo/badtique/emailservice:0.4.1
         ports:
         - containerPort: 8080
         env:
@@ -114,7 +114,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: us-central1-docker.pkg.dev/vsz-demo/onlineboutique/checkoutservice:0.4.1
+          image: us-central1-docker.pkg.dev/next-sds-demo/badtique/checkoutservice:0.4.1
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -196,7 +196,7 @@ spec:
               - all
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/vsz-demo/onlineboutique/recommendationservice:0.4.1
+        image: us-central1-docker.pkg.dev/next-sds-demo/badtique/recommendationservice:0.4.1
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -269,7 +269,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: us-central1-docker.pkg.dev/vsz-demo/onlineboutique/frontend:0.4.1
+          image: us-central1-docker.pkg.dev/next-sds-demo/badtique/frontend:0.4.1
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -380,7 +380,7 @@ spec:
               - all
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/vsz-demo/onlineboutique/paymentservice:0.4.1
+        image: us-central1-docker.pkg.dev/next-sds-demo/badtique/paymentservice:0.4.1
         ports:
         - containerPort: 50051
         env:
@@ -448,7 +448,7 @@ spec:
               - all
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/vsz-demo/onlineboutique/productcatalogservice:0.4.1
+        image: us-central1-docker.pkg.dev/next-sds-demo/badtique/productcatalogservice:0.4.1
         ports:
         - containerPort: 3550
         env:
@@ -518,7 +518,7 @@ spec:
               - all
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/vsz-demo/onlineboutique/cartservice:0.4.1
+        image: us-central1-docker.pkg.dev/next-sds-demo/badtique/cartservice:0.4.1
         ports:
         - containerPort: 7070
         env:
@@ -603,7 +603,7 @@ spec:
               - all
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/vsz-demo/onlineboutique/loadgenerator:0.4.1
+        image: us-central1-docker.pkg.dev/next-sds-demo/badtique/loadgenerator:0.4.1
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -646,7 +646,7 @@ spec:
               - all
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/vsz-demo/onlineboutique/currencyservice:0.4.1
+        image: us-central1-docker.pkg.dev/next-sds-demo/badtique/currencyservice:0.4.1
         ports:
         - name: grpc
           containerPort: 7000
@@ -714,7 +714,7 @@ spec:
               - all
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/vsz-demo/onlineboutique/shippingservice:0.4.1
+        image: us-central1-docker.pkg.dev/next-sds-demo/badtique/shippingservice:0.4.1
         ports:
         - containerPort: 50051
         env:
@@ -850,7 +850,7 @@ spec:
               - all
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/vsz-demo/onlineboutique/adservice:0.4.1
+        image: us-central1-docker.pkg.dev/next-sds-demo/badtique/adservice:0.4.1
         ports:
         - containerPort: 9555
         env:
